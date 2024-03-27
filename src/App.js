@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Auth from'./pages/Auth'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+  
+  
+  const user =[{"name" : "Arun" ,"age" : "22" , "gender" : "male"},{"name" : "Arunaa" ,"age" : "23" , "gender" : "female"},{"name" : "Arunkumar" ,"age" : "32" , "gender" : "male"}];
+  return(
+    <div className='App'>
+      <Auth users={users} user_name="Example Name" user_age="Example Age" status="Example Status"/>
     </div>
-  );
+  )
+
 }
 
 export default App;
